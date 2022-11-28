@@ -1,0 +1,31 @@
+{
+  "name": "SSR Client",
+  "frontend:build": "",
+  "frontend:install": "",
+  "frontend:dev": "",
+  "frontend:dev:watcher": "",
+  "wailsjsdir": "./frontend",
+  "version": "2",
+  "Path": "",
+  "BuildDir": "",
+  "outputfilename": "ssr-client-desktop.exe",
+  "OutputType": "",
+  "Platform": "",
+  "runNonNativeBuildHooks": false,
+  "postBuildHooks": null,
+  "Author": {
+    "name": "",
+    "email": ""
+  },
+  "Info": {
+    "companyName": "ssr-client-desktop",
+    "productName": "ssr-client-desktop",
+    "productVersion": "1.1.7",
+    "copyright": "Copyright 2022",
+    "comments": "Built using Wails (https://wails.app)"
+  },
+  "debounceMS": 100,
+  "devserverurl": "http://localhost:34115",
+  "appargs": "",
+  "nsisType": ""
+}

@@ -1,0 +1,19 @@
+.proxy-item {
+  grid-template-columns: 3.25em 48% 1fr;
+}
+
+.proxy-icons {
+  visibility: hidden;
+  opacity: 0;
+  transition-duration: 200ms;
+  @apply my-4 mr-4 flex justify-end items-center space-x-3;
+}
+
+.proxy-item:hover > .proxy-icons {
+  visibility: visible;
+  opacity: 1;
+}
+
+.proxy-icon {
+  @apply cursor-pointer text-blue-500 w-8 h-8 border-2 border-blue-500 rounded-full flex items-center justify-center hover:text-blue-700 transition;
+}

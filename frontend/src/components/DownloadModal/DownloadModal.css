@@ -1,0 +1,10 @@
+.download-modal {
+  @apply flex justify-center items-center fixed inset-0 w-full h-full overflow-auto;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.download-modal-content {
+  @apply max-w-lg p-5 bg-slate-50 border-2 border-solid rounded-lg;
+  border-color: #888;
+}
