@@ -43,6 +43,11 @@ func (p *Proxy) Run(clientFilePath string, logsFun func(time int64, t string, l 
 	p.GoCmd = cmd.NewCmdOptions(cmd.Options{
 		Buffered:  false,
 		Streaming: true,
+		BeforeExec: []func(cmd *exec.Cmd){
+			func(cmd *exec.Cmd) {
+				cmd.SysProcAttr = &syscall.SysProcAttr{CreationFlags: 0x08000000} // CREATE_NO_WINDOW
+			},
+		},
 	}, clientFilePath, p.GetCli()...)
 	p.StatusChan = p.GoCmd.Start()
 	go func() {

@@ -20,7 +20,7 @@
   "Info": {
     "companyName": "ssr-client-desktop",
     "productName": "ssr-client-desktop",
-    "productVersion": "1.1.7",
+    "productVersion": "1.1.8",
     "copyright": "Copyright 2022",
     "comments": "Built using Wails (https://wails.app)"
   },
